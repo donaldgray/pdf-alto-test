@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pdfaltotest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - $HOME\Docker\pdf-alto\in:/home/input/
+      - $HOME\Docker\pdf-alto\out:/home/output/
